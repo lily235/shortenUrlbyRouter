@@ -9,7 +9,7 @@ import {
 } from 'react-router-dom';
 
 import Root from './routes/root';
-import ShortUrl from './routes/shorturl';
+import ShortUrl, { loader } from './routes/shorturl';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +18,7 @@ const router = createBrowserRouter([
   },{
     path:"/:shorturl",
     element:<ShortUrl></ShortUrl>,
+    loader: loader
   }
 ]);
 

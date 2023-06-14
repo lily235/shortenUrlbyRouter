@@ -48,7 +48,7 @@ export default function Root(){
 
     function handleCopy(){
         
-        navigator.clipboard.writeText(urlInput).then(function(x){
+        navigator.clipboard.writeText(urlInput).then(function(){
             alert("Link copied to clipboard: " + urlInput);
         })
         
